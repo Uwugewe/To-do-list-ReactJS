@@ -1,0 +1,20 @@
+#task {
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+
+ button {
+     padding: 5px 10px;
+     margin-left: 10px;
+     line-height: 1.5;
+     background-color: lightblue;
+     border: solid lightblue;
+ }
+
+ button:focus {
+     outline: none;
+ }
+
+ button:hover {
+     cursor: pointer;
+ }

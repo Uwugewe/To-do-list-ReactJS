@@ -1,0 +1,29 @@
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TasksList {
+    width: 30vw;
+}
+
+li {
+    position: relative;
+    background-color: lightblue;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.noDisplay{
+    display: none;
+}
+
+.display{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
