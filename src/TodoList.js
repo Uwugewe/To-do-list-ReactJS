@@ -22,10 +22,10 @@ class TodoList extends Component {
     let tasksArr = this.props.tasksObj;
 
     let todoList = tasksArr.map( (task) => {
-        return(<li onMouseEnter={ () => {this._closeButton.className='display';}} onMouseLeave={ () => {this._closeButton.className='noDisplay';}} key={task.id.toString()}>{task.taskContent}<span key={task.id.toString()} ref={(element => {this._closeButton = element;})} onClick={ () => {
+        return(<li className="TodoList__task" key={task.id.toString()}>{task.taskContent}<span key={task.id.toString()} ref={(element => {this._closeButton = element;})} onClick={ () => {
             this.props.removeTask(task.id)
             }
-        } className='noDisplay'>X</span> <input type='checkbox'></input></li>)
+        } className='Task__close-button'>X</span> <input type='checkbox'></input></li>)
     });
 
     // let todoList = () => {
