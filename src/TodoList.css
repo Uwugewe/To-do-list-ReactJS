@@ -27,3 +27,15 @@ li {
     right: 0;
     cursor: pointer;
 }
+
+.Task__close-button {
+    display: none;
+}
+
+.TodoList__task:hover .Task__close-button{
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+}
